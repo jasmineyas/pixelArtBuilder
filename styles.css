@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&display=swap');
+
+body {
+    background:ivory;
+    width:65%;
+    font-family:'Inter', sans-serif;
+    font-weight:400;
+    text-align: center;
+    overflow: auto;
+    margin: auto;
+    vertical-align: middle;
+    padding: 3%;
+    position: absolute;
+    top:5%;
+    left:15%;
+    margin-left: -10px;
+    text-align: left;
+}
+
+h1 {
+    font-family:'Montserrat', sans-serif;
+    font-size: 70px;
+    margin: 0.5em;
+    text-align: center;
+}
+
+.redText{
+    color: black;
+    -webkit-text-fill-color: #bc0000; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.whiteText{
+    color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+h2 {
+    margin: 1em 0 0.25em;
+    font-weight:700;
+    font-size: 20px;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+
+/* replace of marquee */
+.special {
+    font-size: 14px;
+    font-family:'Montserrat', sans-serif;
+    color:#525268;
+    margin: 1em;
+}
+
+table,tr,td {
+    border: 1px solid #4e4242;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    justify-content:center;
+}
+
+#splashGrid{
+    height: 330px;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+}
+
+.centre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.beginDesign{
+    font-weight: 600; 
+    margin: 1em; 
+    font-size: 30px;
+    background-color:#bc0000;
+    border-color: transparent;
+    border-width: 5px;
+    color:#ffffff;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.emptyState{
+    height: 200px;
+    width: 100%;
+    background-color: powderblue;
+    display: flex;
+    justify-content: center; /* Align horizontal */
+    align-items: center; /* Align vertical */
+}
+
+#actionPhase{
+    /* height: 300px; */
+    display: none;
+    background-color: #e5ffe3;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+form{
+    margin-top: 1em;
+}
+
+.emptyStateText{
+    display: inline-block;
+    vertical-align: middle;
+    color: #525268;
+    font-style: italic;
+}
+
+/* td {
+    width: 20px;
+    height: 20px;
+} */
+
+input[type=number] {
+    width: 3em;
+}
+
+
+
+/* style this place holder and maybe insert a cute image */
+/* #placeHolder {
+
+} */
+

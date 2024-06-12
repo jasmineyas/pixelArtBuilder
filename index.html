@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Make your own pixel art!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>
+        <span class = "redText" style="margin: 10px;">Pixel </span> <span class = "whiteText">Art</span>  <span class = "redText">Maker </span>
+    </h1>
+    <div id="welcomePage">
+        <div id="splashGrid"></div>
+        <div class="centre">
+            <button class="beginDesign">Begin your design &#129668; </button>
+        </div>
+    </div>
+
+
+    <div id="actionPhase">
+
+        <h2>Set up a new canvas</h2>
+        <form id="sizePicker">
+            <!-- Canvas grid size (pixels): 
+            <input type="number" id="gridSize" name="gridSize" min="10" value="20" max="50"> &nbsp; -->
+            Height (pixels):
+            <input type="number" id="inputHeight" name="height" min="1" value="1"> &nbsp;  
+            Weigth (pixels):
+            <input type="number" id="inputWidth" name="width" min="1" value="1"> &nbsp;
+            <input type="submit" id="setUp" value = "Set up your canvas">
+        </form>
+
+        <h2>Start your design</h2>
+        <p > Your current pen color: <input type="color" id="colorPicker">. Please click here to reset the existing canvas: <button>Reset</button></p>
+        <p style="margin-bottom: 2em;"> Note: you can erase color by right-clicking. </p>
+        <div class='emptyState'> 
+            <p class="emptyStateText">There's no canvas right now. Please create a new canvas under <span style ="font-weight: 700"> Set up a new canvas</span>.<span style="font-style: normal; font-size: 30px; ">&#9757; </span> </p>
+        </div>
+        <table id="pixelCanvas">
+        </table>
+
+    </div>
+    <script src="designs.js"></script>
+</body>
+</html>
+
